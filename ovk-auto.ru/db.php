@@ -1,9 +1,9 @@
 <?php
 
-$dbhost = 'localhost';
-$dbname = 'ovk_auto';
-$username = 'root';
-$password = '';
+$dbhost = 'sql312.xenn.xyz';
+$dbname = ' xnnx_27958771_ovk_auto';
+$username = 'xnnx_27958771';
+$password = 'A5770s1086';
 
 $db = new PDO("mysql:host=$dbhost; dbname=$dbname", $username, $password);
 
