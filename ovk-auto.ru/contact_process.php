@@ -1,4 +1,6 @@
 <?php
+	$mail -> setLanguage ( 'ru' , '/ optional / path / to / language / directory /' );
+
 
     $to = "dimonichise@gmail.com";
 	$from = $_REQUEST['email'];
