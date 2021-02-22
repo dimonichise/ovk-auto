@@ -58,12 +58,6 @@
                                      placeholder="Тема письма">
                              </div>
                          </div>
-                         <div class="col-sm-6">
-                             <div class="form-group">
-                                 <input type="checkbox" class="form-check-input" name="check1">
-                                 <label class="form-check-label" for="check1">Ознакомлен с политикой КД</label>
-                             </div>
-                         </div>
                      </div>
                      <div class="form-group mt-3">
                          <button type="submit" class="button button-contactForm boxed-btn submit-btn">Отправить</button>

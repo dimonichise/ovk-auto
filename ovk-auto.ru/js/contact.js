@@ -31,9 +31,10 @@ $(document).ready(function(){
                 message: {
                     required: true,
                     minlength: 20
-                },
-
-                name:  {
+                }
+            },
+            messages: {
+                name: {
                     required: "come on, you have a name, don't you?",
                     minlength: "your name must consist of at least 2 characters"
                 },
@@ -51,11 +52,9 @@ $(document).ready(function(){
                 message: {
                     required: "um...yea, you have to write something to send this form.",
                     minlength: "thats all? really?"
-                },
-                
+                }
             },
-
-            submitHandler: function(form) {
+			submitHandler: function(form) {
                 $(form).ajaxSubmit({
                     type:"POST",
                     data: $(form).serialize(),
