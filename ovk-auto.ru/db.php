@@ -2,14 +2,32 @@
 
 $dbhost = 'localhost';
 $dbname = 'ovksantq_ovk_aut';
-$username = 'ovksantq_ovk_aut';
 $password = 'a5770S1086@';
+$username = 'ovksantq_ovk_aut';
 
 $db = new PDO("mysql:host=$dbhost; dbname=$dbname", $username, $password);
-
-
-function get_name_pages_all () {
+// Получение всех статей
+function get_news_all() {
     global $db;
-    $name_page = $db->query("SELECT * FROM name_pages");
-    return $name_page;
-};
+    $news = $db->query("SELECT * FROM news");
+    return $news;
+}
+
+//Получение статьи по её id
+function get_new_by_id($id) {
+    global $db;
+    $news = $db->query("SELECT *FROM news WHERE id = $id");
+    foreach ($news as $new) {
+        return $new;
+    }
+}
+
+//Получение название категорий по id
+function get_category_id($id) {
+    global $db;
+    $categories = $db->query("SELECT * FROM news_category WHERE id = $id");
+    foreach ($categories as $category) {
+    return $category["categories"];
+    }
+}
+?>

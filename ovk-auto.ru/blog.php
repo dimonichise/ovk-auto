@@ -1,5 +1,7 @@
 <!--Header PHP -->
-<?php $name_page = 'Новости'; require 'template/header.php'; ?>
+<?php 
+$name_page = 'Новости'; require 'template/header.php';
+ ?>
 
     <!-- bradcam_area_start -->
     <div class="bradcam_area breadcam_bg">
@@ -22,27 +24,36 @@
             <div class="row">
                 <div class="col-lg-8 mb-5 mb-lg-0">
                     <div class="blog_left_sidebar">
-                        <article class="blog_item">
+
+                    <?php 
+                       $news = get_news_all();
+                       foreach ($news as $new): ?>
+
+                       <?php $category_name = get_category_id($new["category_id"]); ?>
+                                          
+                      <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src="img/blog/single_blog_1.png" alt="">
-                                <a href="#" class="blog_item_date">
+                                <img class="card-img rounded-0" src=<?php echo $new["img"]; ?> alt="">
+                                <!-- Дата на цветном фоне -->
+                                <!-- <a href="#" class="blog_item_date"> //
                                     <h3>15</h3>
                                     <p>Jan</p>
-                                </a>
+                                </a> -->
                             </div>
 
                             <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
-                                    <h2>Google inks pact for new 35-storey office</h2>
+                                <a class="d-inline-block" href="single-blog.php?id=<?php echo $new["id"]; ?>">
+                                    <h2><?php echo $new["title"]; ?></h2>
                                 </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <p><?php echo $new["intro_text"]; ?></p>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    <li><a href="#"><i class="fa fa-archive"></i> <?php echo $category_name; ?></a></li>
+                                    <li><a href="#"><i class="fa fa-calendar"></i><?php echo date("d.m.Y", strtotime($new["date"])); ?></a></li>
                                 </ul>
                             </div>
                         </article>
+                        <?php endforeach; ?>
+
 
                         <article class="blog_item">
                             <div class="blog_item_img">
@@ -54,7 +65,7 @@
                             </div>
 
                             <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
+                                <a class="d-inline-block" href="single-blog.php?id=2">
                                     <h2>Google inks pact for new 35-storey office</h2>
                                 </a>
                                 <p>That dominion stars lights dominion divide years for fourth have don't stars is that
@@ -65,6 +76,7 @@
                                 </ul>
                             </div>
                         </article>
+                       
 
                         <article class="blog_item">
                             <div class="blog_item_img">

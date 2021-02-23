@@ -1,5 +1,7 @@
 <!--Header PHP -->
-<?php $name_page = 'О компании'; require 'template/header.php'; ?>
+<?php 
+$name_page = 'О компании'; require 'template/header.php';
+?>
 
     <!-- bradcam_area_start -->
     <div class="bradcam_area breadcam_bg">
