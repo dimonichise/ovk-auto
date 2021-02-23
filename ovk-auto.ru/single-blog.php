@@ -30,7 +30,7 @@ require 'template/header.php';
             <div class="col-lg-8 posts-list">
                <div class="single-post">
                   <div class="feature-img">
-                     <img class="img-fluid" src="img/blog/single_blog_1.png" alt="">
+                     <img class="img-fluid" src= <?php echo $new["img"]; ?>alt="">
                   </div>
                   <div class="blog_details">
                      <h2>
@@ -258,12 +258,18 @@ require 'template/header.php';
                   <aside class="single_sidebar_widget post_category_widget">
                      <h4 class="widget_title">Category</h4>
                      <ul class="list cat-list">
+                      
+                      <?php 
+                           $categories = get_category();
+                           foreach ($categories as $category): ?>
                         <li>
                            <a href="#" class="d-flex">
-                              <p>Resaurant food</p>
+                              <p><?php echo $category['categories']; ?></p>
                               <p>(37)</p>
                            </a>
                         </li>
+                        <?php endforeach; ?>
+
                         <li>
                            <a href="#" class="d-flex">
                               <p>Travel news</p>

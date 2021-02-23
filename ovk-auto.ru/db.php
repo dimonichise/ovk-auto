@@ -9,7 +9,7 @@ $db = new PDO("mysql:host=$dbhost; dbname=$dbname", $username, $password);
 // Получение всех статей
 function get_news_all() {
     global $db;
-    $news = $db->query("SELECT * FROM news");
+    $news = $db->query("SELECT * FROM news ORDER BY id DESC");
     return $news;
 }
 
@@ -29,5 +29,11 @@ function get_category_id($id) {
     foreach ($categories as $category) {
     return $category["categories"];
     }
+}
+
+function get_category() {
+    global $db;
+    $categories = $db->query("SELECT * FROM news_category");
+    return $categories;   
 }
 ?>
