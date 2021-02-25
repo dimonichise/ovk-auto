@@ -22,6 +22,13 @@ function get_new_by_id($id) {
     }
 }
 
+//Получение статьи по её категории
+function get_new_by_cat($cat) {
+    global $db;
+    $news = $db->query("SELECT *FROM news WHERE category_id = '$cat' ORDER BY id DESC");
+    return $news;
+}
+
 //Получение название категорий по id
 function get_category_id($id) {
     global $db;

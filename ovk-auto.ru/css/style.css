@@ -4148,6 +4148,11 @@ h6 {
   line-height: 1.82em !important;
 }
 
+.unordered-list li a {
+  color: #000;
+  text-decoration: none;
+}
+
 /* line 459, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_elements.scss */
 .unordered-list li:before {
   content: "";

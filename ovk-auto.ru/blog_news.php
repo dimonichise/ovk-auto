@@ -26,10 +26,10 @@ $name_page = 'Новости'; require 'template/header.php';
                 <div class="blog_left_sidebar">
 
                     <?php 
-                       $news = get_news_all();
+                       $news = get_new_by_cat('1');
                        foreach ($news as $new): ?>
 
-                    <?php $category_name = get_category_id($new["category_id"]); ?>
+                    <?php $category_name = get_category_id($new["category_id"]); ?> 
 
                     <article class="blog_item">
                         <div class="blog_item_img">
@@ -99,7 +99,7 @@ $name_page = 'Новости'; require 'template/header.php';
                     </aside>
 
                     <?php require "template/category_list.php" ?>
-
+                    
                     <aside class="single_sidebar_widget popular_post_widget">
                         <h3 class="widget_title">Recent Post</h3>
                         <div class="media post_item">

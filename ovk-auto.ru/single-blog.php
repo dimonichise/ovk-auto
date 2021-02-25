@@ -255,53 +255,9 @@ require 'template/header.php';
                            type="submit">Search</button>
                      </form>
                   </aside>
-                  <aside class="single_sidebar_widget post_category_widget">
-                     <h4 class="widget_title">Category</h4>
-                     <ul class="list cat-list">
-                      
-                      <?php 
-                           $categories = get_category();
-                           foreach ($categories as $category): ?>
-                        <li>
-                           <a href="#" class="d-flex">
-                              <p><?php echo $category['categories']; ?></p>
-                              <p>(37)</p>
-                           </a>
-                        </li>
-                        <?php endforeach; ?>
+                  
+                  <?php require "template/category_list.php" ?>
 
-                        <li>
-                           <a href="#" class="d-flex">
-                              <p>Travel news</p>
-                              <p>(10)</p>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" class="d-flex">
-                              <p>Modern technology</p>
-                              <p>(03)</p>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" class="d-flex">
-                              <p>Product</p>
-                              <p>(11)</p>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" class="d-flex">
-                              <p>Inspiration</p>
-                              <p>(21)</p>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" class="d-flex">
-                              <p>Health Care</p>
-                              <p>(21)</p>
-                           </a>
-                        </li>
-                     </ul>
-                  </aside>
                   <aside class="single_sidebar_widget popular_post_widget">
                      <h3 class="widget_title">Recent Post</h3>
                      <div class="media post_item">

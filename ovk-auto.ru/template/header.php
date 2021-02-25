@@ -84,10 +84,10 @@
                                     <ul id="navigation">
                                         <li><a href="index.php">главная</a></li>
                                         <li><a href="about.php">о компании</a></li>
-                                        <li><a href="#">новости <i class="ti-angle-down"></i></a>
+                                        <li><a href="blog.php">новости <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="blog.php">новости</a></li>
-                                                <li><a href="single-blog.php">акции</a></li>
+                                                <li><a href="blog_sale.php">акции</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">Документы<i class="ti-angle-down"></i></a>
