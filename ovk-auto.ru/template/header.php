@@ -96,7 +96,7 @@
 
                                             </ul>
                                         </li>
-                                        <li><a href="#">услуги</a>
+                                        <li><a href="service.php">услуги</a>
                                         <li><a href="contact.php">контакты</a></li>
                                     </ul>
                                 </nav>
