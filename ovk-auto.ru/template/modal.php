@@ -10,15 +10,16 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+                <form class="form-contact contact_form" action="#" method="post"
+                     id="form_recording" novalidate="novalidate">
                     <div class="form-group">
                         <input type="text" class="form-control" name="name_one" aria-describedby="nameHelp"
                             placeholder="Ваше имя">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="tele" placeholder="Ваш телефон в формае 900 000 00 00">
+                        <input type="tel" class="form-control" name="tele" placeholder="Ваш телефон в формае 900 000 00 00">
                     </div>
-                    <div class="form-group">
+                    <!--<div class="form-group">
                         <input type="date" class="form-control" name="date_one" placeholder="Выберете желаемую дату"
                             aria-describedby="dateHelp">
                         <small id="dateHelp" class="dateHelp">
@@ -28,8 +29,8 @@
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" name="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Ознакомлен с политикой КД</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-form">Записаться</button>
+                    </div>-->
+                    <input type="submit">Записаться</input>
                 </form>
             </div>
             <div class="modal-footer">

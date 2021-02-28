@@ -48,6 +48,13 @@
                         </ul>
                     
                     </li>
+                    <li>
+                    <strong>Автомойка</strong>
+                            <ul>
+                                <li><em>Мойка автомобилей</em></li>
+                                <li><em>Химчистка салона автомобилей</em></li>
+                            </ul>
+                    </li>    
                     <li><strong>Автострахование</strong></li>
                     <li><strong>Технический осмотр</strong></li>
                     <li><strong>Изготовление номерных знаков</strong></li>

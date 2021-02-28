@@ -10,9 +10,9 @@
                     <div class="slider_text">
                         <h3> <br> <span>Давай знакомиться</span></h3>
                         <p>Акция для тех кто у нас впервые <br>сумашедшая скидка до 30%</p>
-                        <button type="button" class="btn boxed-btn3" data-toggle="modal" data-target="#exampleModal">
+                        <a href="#"><button type="button" class="btn boxed-btn3">
                             Записаться на сервис
-                        </button>
+                        </button></a>
 
                     </div>
                 </div>

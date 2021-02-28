@@ -51,7 +51,14 @@
                                      placeholder="Email">
                              </div>
                          </div>
-                         <div class="col-12">
+                         <div class="col-sm-6">
+                             <div class="form-group">
+                                 <input class="form-control valid" name="number" id="number" type="tel"
+                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Телефон'"
+                                     placeholder="Телефон">
+                             </div>
+                         </div>
+                         <div class="col-6">
                              <div class="form-group">
                                  <input class="form-control" name="subject" id="subject" type="text"
                                      onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
@@ -82,8 +89,9 @@
                  <div class="media contact-info">
                      <span class="contact-info__icon"><i class="ti-email"></i></span>
                      <div class="media-body">
-                         <h3>support@colorlib.com</h3>
-                         <p>Send us your query anytime!</p>
+                         <h3>dvbochkov@ovk-auto.ru</h3>
+                         <p>Если не смогли связаться через форму обратной связи,
+                         напишите на данный e-mail.</p>
                      </div>
                  </div>
              </div>

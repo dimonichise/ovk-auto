@@ -25,10 +25,10 @@
                             </h3>
                             <ul class="links">
                                 <li><a href="club_card.php">Клубная кара</a></li>
-                                <li><a href="#">Pet surgeries </a></li>
-                                <li><a href="#">Pet Adoption</a></li>
-                                <li><a href="#">Dog Insurance</a></li>
-                                <li><a href="#">Dog Insurance</a></li>
+                                <li><a href="blog.php">Новости</a></li>
+                                <li><a href="blog_sale.php">Акции</a></li>
+                               <!-- <li><a href="#">Dog Insurance</a></li>
+                                <li><a href="#">Dog Insurance</a></li>-->
                             </ul>
                         </div>
                     </div>
@@ -40,9 +40,9 @@
                             <ul class="links">
                                 <li><a href="index.php">Главная</a></li>
                                 <li><a href="about.php">О компании</a></li>
-                                <li><a href="#">Услуги</a></li>
+                                <li><a href="service.php">Услуги</a></li>
                                 <li><a href="#">Техническая документация</a></li>
-                                <li><a href="#">Обратная связь</a></li>
+                                <li><a href="contact.php">Обратная связь</a></li>
                             </ul>
                         </div>
                     </div>
