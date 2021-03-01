@@ -56,13 +56,14 @@ require 'template/header.php';
                     
                   </div>
                </div>
-               <div class="navigation-top">
+               <hr>
+              <!-- <div class="navigation-top">
                   <div class="d-sm-flex justify-content-between text-center">
                      <p class="like-info"><span class="align-middle"><i class="fa fa-heart"></i></span> Lily and 4
                         people like this</p>
-                     <div class="col-sm-4 text-center my-2 my-sm-0">
-                        <!-- <p class="comment-count"><span class="align-middle"><i class="fa fa-comment"></i></span> 06 Comments</p> -->
-                     </div>
+                     <div class="col-sm-4 text-center my-2 my-sm-0">-->
+                        <!-- <p class="comment-count"><span class="align-middle"><i class="fa fa-comment"></i></span> 06 Comments</p>
+                    </div>
                      <ul class="social-icons">
                         <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -112,16 +113,16 @@ require 'template/header.php';
                         </div>
                      </div>
                   </div>
-               </div>
+               </div>-->
                <div class="blog-author">
                   <div class="media align-items-center">
                      <img src="img/blog/author.png" alt="">
                      <div class="media-body">
                         <a href="#">
-                           <h4>Harvard milan</h4>
+                           <h4>Администрация</h4>
                         </a>
-                        <p>Second divided from form fish beast made. Every of seas all gathered use saying you're, he
-                           our dominion twon Second divided from</p>
+                        <p>Если у Вас отались вопросы по данной теме, задайте их пожалуйста
+                        через форму обратной связи. Мы обязательно ответим на  них в ближайшее время.</p>
                      </div>
                   </div>
                </div>
@@ -175,45 +176,7 @@ require 'template/header.php';
                   
                   <?php require "template/category_list.php" ?>
 
-                  <aside class="single_sidebar_widget popular_post_widget">
-                     <h3 class="widget_title">Recent Post</h3>
-                     <div class="media post_item">
-                        <img src="img/post/post_1.png" alt="post">
-                        <div class="media-body">
-                           <a href="single-blog.html">
-                              <h3>From life was you fish...</h3>
-                           </a>
-                           <p>January 12, 2019</p>
-                        </div>
-                     </div>
-                     <div class="media post_item">
-                        <img src="img/post/post_2.png" alt="post">
-                        <div class="media-body">
-                           <a href="single-blog.html">
-                              <h3>The Amazing Hubble</h3>
-                           </a>
-                           <p>02 Hours ago</p>
-                        </div>
-                     </div>
-                     <div class="media post_item">
-                        <img src="img/post/post_3.png" alt="post">
-                        <div class="media-body">
-                           <a href="single-blog.html">
-                              <h3>Astronomy Or Astrology</h3>
-                           </a>
-                           <p>03 Hours ago</p>
-                        </div>
-                     </div>
-                     <div class="media post_item">
-                        <img src="img/post/post_4.png" alt="post">
-                        <div class="media-body">
-                           <a href="single-blog.html">
-                              <h3>Asteroids telescope</h3>
-                           </a>
-                           <p>01 Hours ago</p>
-                        </div>
-                     </div>
-                  </aside>
+                  
                  
                   
                   <!-- Инстаграмный блок -->

@@ -90,11 +90,8 @@
                                                 <li><a href="blog_sale.php">акции</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">Документы<i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">схемы</a></li>
-
-                                            </ul>
+                                        <li><a href="documents.php">Документы</a>
+   
                                         </li>
                                         <li><a href="service.php">услуги</a>
                                         <li><a href="contact.php">контакты</a></li>

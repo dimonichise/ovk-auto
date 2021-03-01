@@ -58,7 +58,7 @@
                                      placeholder="Телефон">
                              </div>
                          </div>
-                         <div class="col-6">
+                         <div class="col-sm-6">
                              <div class="form-group">
                                  <input class="form-control" name="subject" id="subject" type="text"
                                      onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
