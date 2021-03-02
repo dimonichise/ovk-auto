@@ -30,7 +30,7 @@
                          </div>
                          <div class="col-sm-12">
                              <div class="form-group">
-                                 <input class="form-control" name="subject" id="subject" type="date"
+                                 <input class="form-control" name="data" id="data" type="date"
                                      onfocus="this.placeholder = ''" onblur="this.placeholder = 'Выберете дату'"
                                      placeholder="Выберете дату">
                              </div>

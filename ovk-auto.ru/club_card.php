@@ -64,7 +64,7 @@
                 <div class="table-row">
                     <div class="serial">03</div>
                     <div class="country"> <i class="fa fa-car fa-3x"></i>Осмор</div>
-                    <div class="visit"><span>Всем держателям "Клубной карты"<a href="car_inspection.php">осмотр автомобиля по 30 пунктам</a> - бесплатно!</span></div>
+                    <div class="visit"><span>Всем держателям "Клубной карты"<a href="https://ovk-auto.ru/single-blog.php?id=3">осмотр автомобиля по 30 пунктам</a> - бесплатно!</span></div>
                     <div class="percentage">Без ограничений*. Сумма чека и набор услуг актуальны на момент публикации.</div>
                 </div>
                 <div class="table-row">

@@ -1,12 +1,14 @@
 <!--Header PHP -->
-<?php 
-require 'template/header.php'; 
+
+<?php
+
+ $name_page = $new["title"];
+ require 'template/header.php'; 
+ 
 ?>
 
 <?php
-   $new = get_new_by_id($_GET['id']); 
    $category_name = get_category_id($new["category_id"]);
-
 ?>
 
   <!-- bradcam_area_start -->

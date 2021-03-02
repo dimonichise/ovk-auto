@@ -28,6 +28,9 @@ $(document).ready(function(){
                     required: true,
                     email: true
                 },
+                data: {
+                    required: true,
+                },
                 message: {
                     required: true,
                     minlength: 20
@@ -35,23 +38,29 @@ $(document).ready(function(){
             },
             messages: {
                 name: {
-                    required: "come on, you have a name, don't you?",
-                    minlength: "your name must consist of at least 2 characters"
+                    required: "У тебя же есть имя? Ну тогда не стесняйся и напиши его",
+                    minlength: "Имя должно состоять минимум из 2 букв"
                 },
                 subject: {
-                    required: "come on, you have a subject, don't you?",
-                    minlength: "your subject must consist of at least 4 characters"
-                },
+                    required: "Ну на пиши пожалуйста тему. Нам будет легче ответить",
+                    minlength: "Давай напишим хотя бы 4 буквы"
+                },    
                 number: {
-                    required: "come on, you have a number, don't you?",
-                    minlength: "your Number must consist of at least 10 characters"
+                    required: "Написав телефон ты поможешь быстрее решить проблему",
+                    minlength: "Номер телефона можно уместить минимум в 10 цифр"
                 },
                 email: {
-                    required: "no email, no message"
+                    required: "E-mail нужен полюбому)))"
+                },
+                data: {
+                    required: "Для записи надо выбрать дату"
+                },
+                time: {
+                    required: "Для записи надо выбрать время"
                 },
                 message: {
-                    required: "um...yea, you have to write something to send this form.",
-                    minlength: "thats all? really?"
+                    required: "Как решить вопрос если его нет? Напишите хоть что-то пожалуйста",
+                    minlength: "И это всё? Ты серьёзно?"
                 }
             },
 			submitHandler: function(form) {
@@ -60,9 +69,9 @@ $(document).ready(function(){
                     data: $(form).serialize(),
                     url:"contact_process.php",
                     success: function() {
-                        $('#contactForm :input').attr('disabled', 'disabled');
+                        $('#contactForm :input').val('');
                         $('#contactForm').fadeTo( "slow", 1, function() {
-                            $(this).find(':input').attr('disabled', 'disabled');
+                            $(this).find(':input').val('');
                             $(this).find('label').css('cursor','default');
                             $('#success').fadeIn()
                             $('.modal').modal('hide');

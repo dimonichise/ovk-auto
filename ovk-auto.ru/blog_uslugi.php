@@ -1,6 +1,6 @@
 <!--Header PHP -->
 <?php 
-$name_page = 'Акции'; require 'template/header.php';
+$name_page = 'Услуги'; require 'template/header.php';
  ?>
 
 <!-- bradcam_area_start -->
@@ -9,7 +9,7 @@ $name_page = 'Акции'; require 'template/header.php';
         <div class="row">
             <div class="col-lg-12">
                 <div class="bradcam_text text-center">
-                    <h3>Акции</h3>
+                    <h3>Услуги</h3>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@ $name_page = 'Акции'; require 'template/header.php';
                 <div class="blog_left_sidebar">
 
                     <?php 
-                       $news = get_new_by_cat('2');
+                       $news = get_new_by_cat('3');
                        foreach ($news as $new): ?>
 
                     <?php $category_name = get_category_id($new["category_id"]); ?> 

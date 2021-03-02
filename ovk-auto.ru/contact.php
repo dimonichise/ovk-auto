@@ -33,21 +33,21 @@
                          <div class="col-12">
                              <div class="form-group">
                                  <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
-                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
+                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше сообщение'"
                                      placeholder=" Ваше сообщение"></textarea>
                              </div>
                          </div>
                          <div class="col-sm-6">
                              <div class="form-group">
                                  <input class="form-control valid" name="name" id="name" type="text"
-                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
+                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше имя'"
                                      placeholder="Ваше имя">
                              </div>
                          </div>
                          <div class="col-sm-6">
                              <div class="form-group">
                                  <input class="form-control valid" name="email" id="email" type="email"
-                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'"
+                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'"
                                      placeholder="Email">
                              </div>
                          </div>
@@ -61,7 +61,7 @@
                          <div class="col-sm-6">
                              <div class="form-group">
                                  <input class="form-control" name="subject" id="subject" type="text"
-                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
+                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Тема письма'"
                                      placeholder="Тема письма">
                              </div>
                          </div>

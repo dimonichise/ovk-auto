@@ -43,4 +43,7 @@ function get_category() {
     $categories = $db->query("SELECT * FROM news_category");
     return $categories;   
 }
+$new = get_new_by_id($_GET['id']); 
+
+
 ?>
