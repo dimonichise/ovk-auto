@@ -50,7 +50,14 @@
         <div><img src="https://mc.yandex.ru/watch/62961154" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    
+    <!--reCaptcha v3-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 

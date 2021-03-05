@@ -10,41 +10,41 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form  class="form-contact contact_form" action="contact_process.php" method="post"
-                     id="contactForm" novalidate="novalidate">
-                     <div class="row">
-                        
-                         <div class="col-sm-12">
-                             <div class="form-group">
-                                 <input class="form-control valid" name="name" id="name" type="text"
-                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше имя'"
-                                     placeholder="Ваше имя">
-                             </div>
-                         </div>
-                         <div class="col-sm-12">
-                             <div class="form-group">
-                                 <input class="form-control valid" name="number" id="number" type="tel"
-                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Телефон'"
-                                     placeholder="Телефон">
-                             </div>
-                         </div>
-                         <div class="col-sm-12">
-                             <div class="form-group">
-                                 <input class="form-control" name="data" id="data" type="date"
-                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Выберете дату'"
-                                     placeholder="Выберете дату">
-                             </div>
-                         </div>
-                            <div class="col-sm-12">
-								<div class="form-group">
-									<select class="form-control" name="time" id="time" type="text"
-                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Выберете время'"
-                                     placeholder="Время">
-									<option value="8:00">8:00</option>
-									<option value="8:30">8:30</option>
-									<option value="9:00">9:00</option>
-									<option value="9:30">9:30</option>
-									<option value="10:00">10:00</option>
+                <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
+                    novalidate="novalidate">
+                    <div class="row">
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input class="form-control valid" name="name" id="name" type="text"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше имя'"
+                                    placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input class="form-control valid" name="number" id="number" type="tel"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Телефон'"
+                                    placeholder="Телефон">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input class="form-control" name="data" id="data" type="date"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Выберете дату'"
+                                    placeholder="Выберете дату">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <select class="form-control" name="time" id="time" type="text"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Выберете время'"
+                                    placeholder="Время">
+                                    <option value="8:00">8:00</option>
+                                    <option value="8:30">8:30</option>
+                                    <option value="9:00">9:00</option>
+                                    <option value="9:30">9:30</option>
+                                    <option value="10:00">10:00</option>
                                     <option value="10:30">10:30</option>
                                     <option value="11:00">11:00</option>
                                     <option value="11:30">11:30</option>
@@ -57,28 +57,39 @@
                                     <option value="15:30">15:30</option>
                                     <option value="16:00">16:00</option>
                                     <option value="16:30">16:30</option>
-                                    
 
-									</select>
-								</div>
-							</div>
-                            <div class="col-12">
-                             <div class="form-group">
-                                 <textarea class="form-control w-100" name="message" id="message" cols="30" rows="3"
-                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Наименование работ'"
-                                     placeholder=" Наименование работ"></textarea>
-                             </div>
-                         </div>
-                         </div>
-                     </div>
-                     <div class="form-group mt-3">
-                         <button type="submit" class="button button-contactForm boxed-btn submit-btn">Записаться</button>
-                     </div>
-                 </form>
-            </div>
-            <div class="modal-footer">
 
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <select class="form-control" name="value" id="value" type="text"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Вид работ'"
+                                    placeholder="Вид работ">
+                                    <option value=""></option>
+                                    <option value="ТО">Техническое обслуживание</option>
+                                    <option value="Ремон ходовой">Ремонт ходовой части</option>
+                                    <option value="Электрик">Диагностика(электрика)</option>
+                                    <option value="Шиномонтаж">Шиномонтаж</option>
+                                    <option value="Развал">Развал-схождение</option>
+                                    <option value="Развал">Другое...</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
             </div>
+            <div class="form-group mt-3">
+                <button type="submit" class="button button-contactForm 
+                         boxed-btn submit-btn g-recaptcha"
+                        data-sitekey="6LfwT6wZAAAAALPlwydnZOMTAZ49q-ankwazkv5L" data-callback='onSubmit'
+                        data-action='submit'>Записаться</button>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+
         </div>
     </div>
+</div>
 </div>

@@ -167,7 +167,10 @@
                          </div>
                      </div>
                      <div class="form-group mt-3">
-                         <button type="submit" class="button button-contactForm boxed-btn submit-btn">Отправить</button>
+                         <button type="submit" class="button button-contactForm boxed-btn submit-btn g-recaptcha"
+                          data-sitekey="6LfwT6wZAAAAALPlwydnZOMTAZ49q-ankwazkv5L" 
+                           data-callback='onSubmit' 
+                           data-action='submit'>Отправить</button>
                      </div>
                  </form>
              </div>

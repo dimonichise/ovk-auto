@@ -1,5 +1,5 @@
 <!--Header PHP -->
-<?php $name_page = 'OVK-AUTO'; require 'template/header.php'; ?>
+<?php $name_page = 'Автосервис OVK-AUTO'; require 'template/header.php'; ?>
 
 <!-- slider_area_start -->
 <div class="slider_area">

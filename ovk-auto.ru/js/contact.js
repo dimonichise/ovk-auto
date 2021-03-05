@@ -28,6 +28,9 @@ $(document).ready(function(){
                     required: true,
                     email: true
                 },
+                value: {
+                    required: true,
+                },
                 data: {
                     required: true,
                 },
@@ -57,6 +60,9 @@ $(document).ready(function(){
                 },
                 time: {
                     required: "Для записи надо выбрать время"
+                },
+                value: {
+                    required: "Выберете пожалуйста вид работ"
                 },
                 message: {
                     required: "Как решить вопрос если его нет? Напишите хоть что-то пожалуйста",

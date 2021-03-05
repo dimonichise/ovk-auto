@@ -23,6 +23,7 @@ function check_symbol($value, $field_name, $required, $pattern){
     $cmessage = $_REQUEST['message'];
 	$data = $_REQUEST['data'];
 	$time = $_REQUEST['time'];
+    $value = $_REQUEST['value'];
 
 	$subject = "Запись на сайт";
 	
@@ -50,6 +51,7 @@ function check_symbol($value, $field_name, $required, $pattern){
 	$body .= "<tr><td style='border:none;'><strong>Тема:</strong> {$subject}</td></tr>";
 	$body .= "<tr><td style='border:none;'><strong>Дата:</strong> {$data}</td></tr>";
 	$body .= "<tr><td style='border:none;'><strong>Время:</strong> {$time}</td></tr>";
+    $body .= "<tr><td style='border:none;'><strong>Вид работ:</strong> {$value}</td></tr>";
 	$body .= "<tr><td></td></tr>";
 	$body .= "<tr><td colspan='2' style='border:none;'><strong>Сообщение:</strong>{$cmessage}</td></tr>";
 	$body .= "</tbody></table>";
