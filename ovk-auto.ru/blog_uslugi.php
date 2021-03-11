@@ -26,6 +26,19 @@ $name_page = 'Услуги'; require 'template/header.php';
                 <div class="blog_left_sidebar">
 
                     <?php 
+                         // Текущая страница
+                         if (isset($_GET['page'])){
+                            $page = $_GET['page'];
+                        }else $page = 1;
+                        $kol = 3;  //количество записей для вывода
+                        $art = ($page * $kol) - $kol; // определяем, с какой записи нам выводить
+                        // Определяем все количество записей в таблице
+                        
+                        $total=$db->query("SELECT COUNT(*) as count FROM news  WHERE `category_id` = 3")->fetchColumn();
+                        // Количество страниц для пагинации
+                        $str_pag = ceil($total / $kol);
+
+
                        $news = get_new_by_cat('3');
                        foreach ($news as $new): ?>
 
@@ -58,26 +71,47 @@ $name_page = 'Услуги'; require 'template/header.php';
 
 
 
+                    <!--Паджинация -->                 
                     <nav class="blog-pagination justify-content-center d-flex">
                         <ul class="pagination">
+                        <!-- Стрелка назад --> 
                             <li class="page-item">
-                                <a href="#" class="page-link" aria-label="Previous">
+                                <a href="blog_uslugi.php?page=<?php if($page!=1) {
+                                    echo $page-1;
+                                } else{
+                                    echo $page=1;
+                                }
+                                    ?>" class="page-link" aria-label="Previous">
                                     <i class="ti-angle-left"></i>
                                 </a>
                             </li>
+                         <!--Кнопки страниц и класс актив -->        
+                    <?php for ($i = 1; $i <= $str_pag; $i++){
+                        if($page == $i)                
+                        echo '<li class="page-item active">
+                        <a href=blog_uslugi.php?page='.$i.' class="page-link">'.$i.'</a>
+                    </li>';
+                        else {
+                            echo '<li class="page-item">
+                            <a href=blog_uslugi.php?page='.$i.' class="page-link">'.$i.'</a>
+                        </li>';  
+                        }
+                    }?>
+                       <!--Стрелка назад -->   
                             <li class="page-item">
-                                <a href="#" class="page-link">1</a>
-                            </li>
-                            <li class="page-item active">
-                                <a href="#" class="page-link">2</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="#" class="page-link" aria-label="Next">
+                            <a href="blog_uslugi.php?page=<?php if($page<$str_pag) {
+                                echo $page+1;
+                            }else {
+                                echo $page;
+                            }
+                                    ?>" class="page-link" aria-label="Next">
                                     <i class="ti-angle-right"></i>
                                 </a>
                             </li>
                         </ul>
                     </nav>
+
+                    <!--Конец поджинации -->
                 </div>
             </div>
             <div class="col-lg-4">

@@ -70,36 +70,48 @@ $name_page = 'Новости'; require 'template/header.php';
                     <?php endforeach; ?>
 
 
-
+                    <!--Паджинация -->                 
                     <nav class="blog-pagination justify-content-center d-flex">
                         <ul class="pagination">
-                        
+                        <!-- Стрелка назад --> 
                             <li class="page-item">
-                                <a href="blog.php?page=<?php echo $page-1?>" class="page-link" aria-label="Previous">
+                                <a href="blog.php?page=<?php if($page!=1) {
+                                    echo $page-1;
+                                } else{
+                                    echo $page=1;
+                                }
+                                    ?>" class="page-link" aria-label="Previous">
                                     <i class="ti-angle-left"></i>
                                 </a>
                             </li>
-                                
+                         <!--Кнопки страниц и класс актив -->        
                     <?php for ($i = 1; $i <= $str_pag; $i++){
-                        echo '<li class="page-item">
+                        if($page == $i)                
+                        echo '<li class="page-item active">
                         <a href=blog.php?page='.$i.' class="page-link">'.$i.'</a>
                     </li>';
+                        else {
+                            echo '<li class="page-item">
+                            <a href=blog.php?page='.$i.' class="page-link">'.$i.'</a>
+                        </li>';  
+                        }
                     }?>
-                         
-                           <!-- <li class="page-item">
-                                <a href=blog.php?page=".$i." class="page-link">1</a>
-                            </li>
-                    
-                            <li class="page-item active">
-                                <a href="#" class="page-link">2</a>
-                            </li>-->
+                       <!--Стрелка назад -->   
                             <li class="page-item">
-                                <a href="#" class="page-link" aria-label="Next">
+                            <a href="blog.php?page=<?php if($page<$str_pag) {
+                                echo $page+1;
+                            }else {
+                                echo $page;
+                            }
+                                    ?>" class="page-link" aria-label="Next">
                                     <i class="ti-angle-right"></i>
                                 </a>
                             </li>
                         </ul>
                     </nav>
+
+                    <!--Конец поджинации -->
+
                 </div>
             </div>
             <div class="col-lg-4">
