@@ -2,7 +2,6 @@
 
 <?php
 
- $name_page = $new["title"];
  require 'template/header.php'; 
  
 ?>

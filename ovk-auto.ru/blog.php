@@ -26,8 +26,20 @@ $name_page = 'Новости'; require 'template/header.php';
                 <div class="blog_left_sidebar">
 
                     <?php 
-                       $news = get_news_all();
-                       foreach ($news as $new): ?>
+                     // Текущая страница
+                        if (isset($_GET['page'])){
+                            $page = $_GET['page'];
+                        }else $page = 1;
+                        $kol = 3;  //количество записей для вывода
+                        $art = ($page * $kol) - $kol; // определяем, с какой записи нам выводить
+                        // Определяем все количество записей в таблице
+                        
+                        $total=$db->query("SELECT COUNT(*) as count FROM news")->fetchColumn();
+                        // Количество страниц для пагинации
+                        $str_pag = ceil($total / $kol);
+
+                         $news = get_news_all($art, $kol);
+                            foreach ($news as $new): ?>
 
                     <?php $category_name = get_category_id($new["category_id"]); ?>
 
@@ -54,23 +66,33 @@ $name_page = 'Новости'; require 'template/header.php';
                             </ul>
                         </div>
                     </article>
+
                     <?php endforeach; ?>
 
 
 
                     <nav class="blog-pagination justify-content-center d-flex">
                         <ul class="pagination">
+                        
                             <li class="page-item">
-                                <a href="#" class="page-link" aria-label="Previous">
+                                <a href="blog.php?page=<?php echo $page-1?>" class="page-link" aria-label="Previous">
                                     <i class="ti-angle-left"></i>
                                 </a>
                             </li>
-                            <li class="page-item">
-                                <a href="#" class="page-link">1</a>
+                                
+                    <?php for ($i = 1; $i <= $str_pag; $i++){
+                        echo '<li class="page-item">
+                        <a href=blog.php?page='.$i.' class="page-link">'.$i.'</a>
+                    </li>';
+                    }?>
+                         
+                           <!-- <li class="page-item">
+                                <a href=blog.php?page=".$i." class="page-link">1</a>
                             </li>
+                    
                             <li class="page-item active">
                                 <a href="#" class="page-link">2</a>
-                            </li>
+                            </li>-->
                             <li class="page-item">
                                 <a href="#" class="page-link" aria-label="Next">
                                     <i class="ti-angle-right"></i>

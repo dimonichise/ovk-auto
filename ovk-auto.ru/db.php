@@ -7,9 +7,10 @@ $username = 'ovksantq_ovk_aut';
 
 $db = new PDO("mysql:host=$dbhost; dbname=$dbname", $username, $password);
 // Получение всех статей
-function get_news_all() {
+function get_news_all($art, $kol) {
     global $db;
-    $news = $db->query("SELECT * FROM news ORDER BY id DESC");
+    
+    $news = $db->query("SELECT * FROM news ORDER BY id DESC LIMIT $art, $kol");
     return $news;
 }
 
@@ -37,7 +38,7 @@ function get_category_id($id) {
     return $category["categories"];
     }
 }
-
+//Получение всех категорий
 function get_category() {
     global $db;
     $categories = $db->query("SELECT * FROM news_category");

@@ -25,7 +25,10 @@ function check_symbol($value, $field_name, $required, $pattern){
 	$time = $_REQUEST['time'];
     $value = $_REQUEST['value'];
 
-	$subject = "Запись на сайт";
+	if(isset($subject))
+    $subject = $subject;
+    else
+    $subject = 'Запись на сайт';
 	
     $headers = "From: $from";
 	$headers = "From: " . $from . "\r\n";
@@ -49,9 +52,15 @@ function check_symbol($value, $field_name, $required, $pattern){
 	$body .= "</tr>";
 	$body .= "<tr><td style='border:none;'><strong>Телефон:</strong> {$number}</td></tr>";
 	$body .= "<tr><td style='border:none;'><strong>Тема:</strong> {$subject}</td></tr>";
-	$body .= "<tr><td style='border:none;'><strong>Дата:</strong> {$data}</td></tr>";
+	if(isset($data)) {
+        $body .=  "<tr><td style='border:none;'><strong>Дата:</strong> {$data}</td></tr>";
+            }
+    if(isset($time)) {        
 	$body .= "<tr><td style='border:none;'><strong>Время:</strong> {$time}</td></tr>";
+    }
+    if(isset($time)) { 
     $body .= "<tr><td style='border:none;'><strong>Вид работ:</strong> {$value}</td></tr>";
+    }
 	$body .= "<tr><td></td></tr>";
 	$body .= "<tr><td colspan='2' style='border:none;'><strong>Сообщение:</strong>{$cmessage}</td></tr>";
 	$body .= "</tbody></table>";

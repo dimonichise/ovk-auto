@@ -6,7 +6,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><?php echo "$name_page"; ?></title>
+        <title><?php    if(isset($name_page))
+                            echo $name_page;
+                        else
+                            echo $new['title']; ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -51,13 +54,13 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
     <!--reCaptcha v3-->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!--<script src="https://www.google.com/recaptcha/api.js"></script>
 
     <script>
         function onSubmit(token) {
             document.getElementById("demo-form").submit();
         }
-    </script>
+    </script>-->
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
