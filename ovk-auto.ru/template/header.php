@@ -1,16 +1,25 @@
-<?php require 'db.php'; ?>
-
 <!doctype html>
 <html class="no-js" lang="ru">
 
 <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52444616-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-52444616-2');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title><?php    if(isset($name_page))
-                            echo $name_page;
-                        else
-                            echo $new['title']; ?></title>
-    <meta name="description" content="">
+        <title><?php  echo $name_page;?> </title>
+<meta name="description" content="<?php if(isset($name_page))
+                                            $nam = $name_page;
+                                            $description = get_descrip_by_id($nam);
+                                            echo $description['text']; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->

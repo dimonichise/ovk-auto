@@ -1,5 +1,8 @@
 <!--Header PHP -->
-<?php $name_page = 'Автосервис OVK-AUTO - 25 лет надежного партнерства'; require 'template/header.php'; ?>
+<?php 
+require 'db.php';
+$name_page = 'Автосервис OVK-AUTO - 25 лет надежного партнерства'; 
+require 'template/header.php'; ?>
 
 <!-- slider_area_start -->
 <div class="slider_area">

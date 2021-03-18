@@ -14,12 +14,30 @@ function get_news_all($art, $kol) {
     return $news;
 }
 
+
+function get_pages_all($id) {
+    global $db;   
+    $pages = $db->query("SELECT * FROM pages WHERE id = $id");
+    foreach ($pages as $page);
+    return $page;
+}
+
+$pagen = get_pages_all(($_GET['id']));
+
 //Получение статьи по её id
 function get_new_by_id($id) {
     global $db;
     $news = $db->query("SELECT *FROM news WHERE id = $id");
     foreach ($news as $new) {
         return $new;
+    }
+}
+//получение meta description  по названию страницы
+function get_descrip_by_id($name) {
+    global $db;
+    $descriptions = $db->query("SELECT * FROM `description` WHERE name_page='$name'");
+    foreach ($descriptions as $description) {
+        return $description;
     }
 }
 

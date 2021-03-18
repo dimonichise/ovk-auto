@@ -1,5 +1,8 @@
 <!--Header PHP -->
-<?php $name_page = 'Программа лояльности "Клубная карта"'; require 'template/header.php'; ?>
+<?php
+require 'db.php';
+ $name_page = 'Программа лояльности "Клубная карта"'; 
+require 'template/header.php'; ?>
 
 <!-- bradcam_area_start -->
 <div class="bradcam_area breadcam_bg">

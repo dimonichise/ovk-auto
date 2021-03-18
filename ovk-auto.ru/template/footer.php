@@ -56,11 +56,12 @@
                             <p class="address_text">На автомобильном рынке Саратова
                                 <strong>более 25 лет.</strong>
                             </p>
+                            <p><a href="politica.html" target="_blank">Политика конфиденциальности</a></p>
                             <div class="socail_links">
                                 <ul>
                                     
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.instagram.com/service_ovk64/">
                                             <i class="fa fa-instagram"></i>
                                         </a>
                                     </li>
@@ -147,6 +148,9 @@
          format: 'HH.MM'
      });
     </script>
+	
+	<!-- Чат бесплатный -->
+	
     
 </body>
 

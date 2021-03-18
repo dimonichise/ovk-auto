@@ -1,5 +1,8 @@
 <!--Header PHP -->
-<?php $name_page = 'Услуги автосервиса OVK-AUTO Саратов.'; require 'template/header.php'; ?>
+<?php 
+require 'db.php';
+$name_page = 'Услуги автосервиса OVK-AUTO Саратов.'; 
+require 'template/header.php'; ?>
 
 <!-- bradcam_area_start -->
 <div class="bradcam_area breadcam_bg">
@@ -37,7 +40,7 @@
                     <strong>Автосервис</strong>
                         <ul>
                             <li><em>Кузовной ремонт</em></li>
-                            <li><em>Ремонт ходовой части</em></li>
+                            <a href = "pages.php?id=1"><li><em>Ремонт ходовой части</em></li></a>
                             <li><em>Ремонт двигателя</em></li>
                             <li><em>Развал-схождение</em></li>
                             <li><em>Техническое обслуживание</em></li>

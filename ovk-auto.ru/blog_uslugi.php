@@ -1,6 +1,8 @@
 <!--Header PHP -->
 <?php 
-$name_page = 'Услуги'; require 'template/header.php';
+require 'db.php';
+$name_page = 'Услуги'; 
+require 'template/header.php';
  ?>
 
 <!-- bradcam_area_start -->

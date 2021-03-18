@@ -1,7 +1,8 @@
 <!--Header PHP -->
 
 <?php
-
+require 'db.php';
+$name_page = $new["title"];
  require 'template/header.php'; 
  
 ?>
